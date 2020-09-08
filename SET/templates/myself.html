@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% load static%}
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Myself</title>
+  </head>
+  <body>
+
+
+
+
+
+
+    
+    <table width=100% >
+      
+      <div class="container">
+        <form method="GET" class="post-form" action="#">
+            <div class="image fit">
+                <img src="{%static 'img/pic11.jpg'%}" style="width: 100%;">
+            </div>
+
+            <header>
+                <h3 class="text-center">我覺得的我</h3>
+                <p class="info text-center">提供更多關於你「自己」吧～</p> <a href="#"></a></p>
+                <p class="text-center">這是一份屬於你覺得的自己，選擇跟你最相近的選項即可唷</p>
+            </header>
+
+              <p for="name" class="text-center">選擇符合自己的選項（多選，可選10項）</p>
+            
+              <div id="container1" class="text-center form-group col-12">
+                <div class="alert alert-primary" role="alert">
+                    <span class="badge badge-primary">個性</span>
+                </div>
+              </div>
+              
+              <div id="container2" class="text-center form-group col-12">
+                <div class="alert alert-primary" role="alert">
+                    <span class="badge badge-primary">食物</span>
+                </div>
+              </div>
+
+              <div id="container3" class="text-center form-group col-12">
+                <div class="alert alert-primary" role="alert">
+                    <span class="badge badge-primary">音樂類型</span>
+                </div>
+              </div>
+              
+              <div id="container4" class="text-center form-group col-12">
+                <div class="alert alert-primary" role="alert">
+                    <span class="badge badge-primary">運動</span>
+                </div>
+              </div>
+
+              <div id="container5" class="text-center form-group  col-12">
+                <div class="alert alert-primary" role="alert">
+                    <span class="badge badge-primary">旅行</span>
+                </div>
+              </div>
+
+              <div id="container6" class="text-center form-group col-12">
+                <div class="alert alert-primary" role="alert">
+                    <span class="badge badge-primary">愛好</span>
+                </div>
+              </div>  
+              <div class="form-group col-12" >
+                <div class="form-row">
+                    <div class="col-3 text-center">
+                        <button type="submit" class="btn btn-primary btn-radius btn-brd grd1 btn-block" value="Upload">送出</button>     
+                    </div> 
+                    <div class="col-3 text-center">
+                        <button type="reset" class="btn btn-primary btn-radius btn-brd grd1 btn-block">清除</button>     
+                    </div> 
+                </div>
+            </div>              
+
+            </form>
+      </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+  <script>
+      container1 = document.getElementById("container1")
+      list_personality = ["幽默","體貼","細心","害羞","悶騷","主動搭話","閒聊","理工宅","外向","內向"]
+      for(i in list_personality){
+          console.log(list_personality[i]);
+            container1.innerHTML +=  `<label class="checkbox-inline">
+              <input type="checkbox" name="personality" id="inlineCheckbox1" value="`+ list_personality[i] +`">` + list_personality[i] +
+              `</label>`
+      }
+
+      container2 = document.getElementById("container2")
+      list_food = ["素食","手搖飲料","火鍋","咖啡","小酌","燒烤","逛夜市","西餐","巷弄小吃","buffet"]
+      for(i in list_food){
+          console.log(list_food[i]);
+            container2.innerHTML +=  `<label class="checkbox-inline">
+              <input type="checkbox" name="food" id="inlineCheckbox2" value="`+ list_food[i] +`">` + list_food[i] +
+              `</label>`
+      }
+
+      container3 = document.getElementById("container3")
+      list_music = ["EDM","藍調","流行","古典","鄉村","獨立樂團","嘻哈","搖滾","R&B","重金屬"]
+      for(i in list_food){
+          console.log(list_food[i]);
+            container3.innerHTML +=  `<label class="checkbox-inline">
+              <input type="checkbox" name="music" id="inlineCheckbox3" value="`+ list_music[i] +`">` + list_music[i] +
+              `</label>`
+      }
+
+      container4 = document.getElementById("container4")
+      list_sport = ["棒球","跑步","潛水","露營","踏青","籃球","健身","游泳","瑜珈","騎腳踏車"]
+      for(i in list_sport){
+          console.log(list_sport[i]);
+            container4.innerHTML +=  `<label class="checkbox-inline">
+              <input type="checkbox" name="sport" id="inlineCheckbox4" value="`+ list_sport[i] +`">` + list_sport[i] +
+              `</label>`
+      }
+
+      container5 = document.getElementById("container5")
+      list_travel = ["亞洲","美國","南美洲","澳洲","南北極","歐洲","東南亞","國內","中東","非洲"]
+      for(i in list_travel){
+          console.log(list_travel[i]);
+            container5.innerHTML +=  `<label class="checkbox-inline">
+              <input type="checkbox" name="travel" id="inlineCheckbox5" value="`+ list_travel[i] +`">` + list_travel[i] +
+              `</label>`
+      }
+
+      container6 = document.getElementById("container6")
+      list_hobby = ["追劇","電玩","看書","電影","展覽","煮飯","愛貓狗","唱歌","跳舞","投資"]
+      for(i in list_hobby ){
+          console.log(list_hobby [i]);
+            container6.innerHTML +=  `<label class="checkbox-inline">
+              <input type="checkbox" name="hobby" id="inlineCheckbox1" value="`+ list_hobby [i] +`">` + list_hobby [i] +
+              `</label>`
+      }
+
+  </script>
+  </body>
+</html>

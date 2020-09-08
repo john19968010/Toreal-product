@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% load static%}
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>test</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row"> 
+        <img src="{%static 'img/pic11.jpg' %}" style="width: 100%;">
+        <h1>進入一個想像的空間，了解自己潛意識</h1>
+        <p class="info">這是一個心理測驗題目，可以增加交友的配對指數唷！不過你的所有答案都不會顯示在他人頁面，請安心填寫＾＾</p> <a href="#"></a></p>
+      </div>
+
+      <form method="GET" class="post-form" action="/test1">
+      <p>1.想像你的眼前有一片森林</p>
+      <!-- <div class="row"> -->
+        <div class="form-group">
+            <select id="inputState" class="form-control" name="test1" value="" required>
+              <option selected hidden value="">眼前的森林是...</option>
+              <option value="白天的森林">白天的森林</option>
+              <option value="夜晚的森林">夜晚的森林</option>
+            </select>
+        </div>
+      <!-- </div> -->
+      <hr>
+      <p>2.你看得到通往森林的路嗎？</p>
+      <!-- <div class="row"> -->
+        <div class="form-group">
+            <select id="inputState" class="form-control" name="test2" value="">
+              <option selected hidden value="">通往森林的路</option>
+              <option value="可以看到">可以看到</option>
+              <option value="看不到">看不到</option>
+            </select>
+        </div>
+      <!-- </div> -->
+      <hr>
+      <p>3.接著走入森林,進入一個屋子，桌子有個杯子</p>
+      <!-- <div class="row"> -->
+        <div class="form-group">
+          <select id="inputState" class="form-control" name="test3" value="" >
+            <option selected hidden value="">杯子... </option>
+            <option value="可以看到">看起來是一個廉價的杯子</option>
+            <option value="看不到">看起來是一個普通的杯子</option>
+            <option value="看不到">看起來是一個昂貴的杯子</option>
+          </select> 
+        </div>
+      <!-- </div> -->
+      <hr>
+      <p>4.你用杯子來做什麼？</p>
+      <!-- <div class="row"> -->
+        <div class="form-group">
+          <select id="inputState" class="form-control" name="test4" value="" >
+            <option selected hidden value=""> 用杯子來...</option>
+            <option value="可以看到">拿起來看一眼</option>
+            <option value="看不到">喝水</option>
+            <option value="看不到">沒碰</option>
+          </select> 
+        </div>
+      <!-- </div> -->
+      <hr>
+      <p>5.屋子裡左邊有一個魚缸，裡面有魚游來游去</p>
+      <!-- <div class="row"> -->
+        <div class="form-group">
+          <select class="form-control" name="test5" value="" >
+            <option selected hidden value=""> 魚缸裡有幾條魚呢？</option>
+            <option value="可以看到">1</option>
+            <option value="看不到">2</option>
+            <option value="看不到">3</option>
+            <option value="可以看到">4</option>
+            <option value="看不到">5</option>
+            <option value="看不到">6</option>
+            <option value="可以看到">7</option>
+            <option value="看不到">8</option>
+            <option value="看不到">9</option>
+            <option value="看不到">10</option>
+          </select> 
+        </div>
+      <!-- </div> -->
+      <hr>
+      <p>6.逛完了屋子你走了出來，你看到了一條河</p>
+      <!-- <div class="row"> -->
+        <div class="form-group">
+          <select class="form-control" name="test6" value="">
+            <option selected hidden value="">你有看到水面波動嗎？</option>
+            <option value="可以看到">有</option>
+            <option value="看不到">沒有</option>
+          </select> 
+        </div>
+      <!-- </div> -->
+      <hr>
+      <p>7.你看著河流的水</p>
+      <!-- <div class="row"> -->
+        <div class="form-group">
+          <select class="form-control" name="test7" value="" >
+            <option selected hidden value="">流動速度是快還是慢 </option>
+            <option value="可以看到">水流的很快</option>
+            <option value="看不到">水流的緩慢</option>
+          </select> 
+        </div>
+      <!-- </div> -->
+      <hr>
+      <p>8.那水的深度如何</p>
+      <!-- <div class="row"> -->
+        <div class="form-group">
+          <select class="form-control" name="test8" value="" >
+            <option selected hidden value="">水深...</option>
+            <option value="可以看到">我覺得滿深</option>
+            <option value="看不到">我覺得很淺</option>
+          </select> 
+        </div>
+      <!-- </div> -->
+      <hr>
+      <p>9.如果現在要你過去河的另一端</p>
+      <!-- <div class="row"> -->
+        <div class="form-group">
+          <select class="form-control" name="test9" value="" >
+            <option selected hidden value="">難易度...</option>
+            <option value="可以看到">這有點困難</option>
+            <option value="看不到">普通難度囉</option>
+            <option value="看不到">沒問題～很簡單</option>
+          </select> 
+        </div>
+      <!-- </div> -->
+      <hr>
+      <p>10.接著你繼續走,看到一隻熊</p>
+      <!-- <div class="row"> -->
+        <div class="form-group">
+          <select class="form-control" name="test10" value="" >
+            <option selected hidden value="">這隻熊，他容易親近嗎</option>
+            <option value="可以看到">看起來不好親近啊</option>
+            <option value="看不到">看起來挺親切的呢</option>
+          </select> 
+        </div>
+      <!-- </div> -->
+      <hr>
+      <p>11.如果要繼續往前走</p>   
+      <!-- <div class="row"> -->
+        <div class="form-group">
+          <select class="form-control" name="test11" value="" >
+            <option selected hidden value="">你怎麼通過呢？</option>
+            <option value="可以看到">這狀況...必須得跟熊打一場衝過去</option>
+            <option value="看不到">假裝沒看到，先逃吧ＱＱ</option>
+            <option value="看不到">安靜地從熊身邊繞過</option>
+          </select> 
+        </div>
+      <!-- </div> -->
+      <hr>
+      <div class="row">
+        <div class="form-group col-12" >
+          <div class="form-row">
+              <div class="col-3 text-center">
+                  <button type="submit" class="btn btn-info btn-radius btn-brd grd1 btn-block">送出</button>     
+              </div> 
+              <div class="col-3 text-center">
+                  <button type="reset" class="btn btn-info btn-radius btn-brd grd1 btn-block">清除</button>     
+              </div> 
+          </div>
+        </div> 
+      </div> 
+    </form>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>

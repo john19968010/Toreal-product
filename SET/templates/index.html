@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="ToReal">ToReal</title>
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="{%static 'css/ToReal.css' %}">
+    
+</head>
+<body>
+    <!-- title區 -->
+    
+    <section class="banner" id="sec">
+        <header>
+            <a href="#" class="logo">ToReal</a>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+        <div class="content">
+            <h2>Finds you<br>the <span>Best Match</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, distinctio sunt. Reiciendis laborum nihil consequuntur temporibus dolorum repudiandae hic nostrum saepe esse, eius quibusdam. Quam inventore voluptate perferendis corrupti amet.</p>
+            
+            <div class="register">
+                <a class="button" href="../register/">Register</a>
+            </div>
+            <div class="log-in">
+                <a class="button" href="../login">Login</a>
+            </div>
+        </div>
+ 
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/"><img src="{%static 'img/facebook.png'%}" alt=""></a></li>
+            <li><a href="https://instagram.com/"><img src="{%static 'img/instagram.png'%}" alt=""></a></li>
+            <li><a href="https://line.me/zh-hant/"><img src="{%static 'img/line.png'%}" alt=""></a></li>
+        </ul>
+    </section>
+    
+
+    <div id="navigation">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#">About US</a></li>
+            <li><a href="#">Activity</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        function toggle(){
+            var sec = document.getElementById('sec');
+            var nav = document.getElementById('navigation');
+            sec.classList.toggle('active')
+            nav.classList.toggle('active')
+        }
+    </script>
+
+</body>
+</html>
